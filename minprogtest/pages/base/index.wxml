@@ -1,0 +1,9 @@
+<!--pages/base/index.wxml-->
+<view>{{msg}}</view>
+<image src="{{img}}"></image>
+<view wx:for="{{arr}}" wx:key="{{item}}">
+{{index}} {{item}}
+</view>
+<view wx:for="{{list}}" wx:key="{{age}}">
+{{item.name}} {{item.age}}
+</view>
