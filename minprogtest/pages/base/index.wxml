@@ -1,9 +1,36 @@
 <!--pages/base/index.wxml-->
 <view>{{msg}}</view>
 <image src="{{img}}"></image>
-<view wx:for="{{arr}}" wx:key="{{item}}">
+<view wx:for-items="{{arr}}" wx:key="{{item}}">
 {{index}} {{item}}
 </view>
-<view wx:for="{{list}}" wx:key="{{age}}">
+<view wx:for="{{list}}" wx:key="{{item.id}}">
 {{item.name}} {{item.age}}
 </view>
+<!-- <view wx:for="{{x}}" wx:for-item="i">
+  <view wx:for="{{y}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view> -->
+
+<view wx:if="{{isLogin}}">Jack</view>
+<view wx:else>请登录</view>
+
+<view hidden="{{isLogin}}">hidden</view>
+
+<!-- 模板使用 -->
+<template name = "man">
+  <view>man</view>
+</template>
+
+<template name = "woman">
+  <view>woman</view>
+</template>
+
+<block wx:for="{{[1,2,3,4,5]}}">
+  <template is = "{{item % 2 == 0 ? 'man' : 'woman'}}"></template>
+</block>
+
+<view class="box"></view>

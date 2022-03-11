@@ -1,1 +1,6 @@
 /* pages/base/index.wxss */
+.box {
+  height: 200rpx;
+  width: 200rpx;
+  background-color: aqua;
+}

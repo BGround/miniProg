@@ -10,14 +10,19 @@ Page({
     arr: ['a', 'b', 'c'],
     list: [
       {
+        id: 'jerry',
         name: 'jerry',
         age: 21
       },
       {
+        id: 'tob',
         name: 'tob',
         age: 23
       }
-    ]
+    ],
+    x: [1,2,3,4,5,6,7,8,9],
+    y: [1,2,3,4,5,6,7,8,9],
+    isLogin: true
   },
 
   /**
